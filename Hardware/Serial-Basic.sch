@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20110,7 +20110,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
-<part name="J3" library="SparkFun-Connectors" deviceset="M06" device="SMD-FEMALE-V2"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="M06" device="SMD-FEMALE-V2"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="U$2" library="SparkFun" deviceset="5V" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -20120,13 +20120,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="222.504" y="121.412" size="1.778" layer="95">Default 5V</text>
+<text x="220.726" y="121.158" size="1.778" layer="95">Default 3.3V</text>
 <text x="238.76" y="7.62" size="2.54" layer="97">v01</text>
 <text x="35.56" y="71.12" size="2.54" layer="97">USB to Serial</text>
 <text x="129.54" y="71.12" size="2.54" layer="97">3.3V Regulation</text>
 <wire x1="106.68" y1="185.42" x2="106.68" y2="0" width="0.2032" layer="97" style="longdash"/>
 <wire x1="185.42" y1="185.42" x2="185.42" y2="35.56" width="0.2032" layer="97" style="longdash"/>
-<text x="170.942" y="11.176" size="2.54" layer="97">N. Seidle</text>
+<text x="170.942" y="11.176" size="2.54" layer="94">N. Seidle</text>
 <text x="215.138" y="124.968" size="1.778" layer="95">Move jumper to 5V
 for 5V VCC and Logic</text>
 </plain>
@@ -20172,14 +20172,14 @@ for 5V VCC and Logic</text>
 <instance part="C6" gate="G$1" x="53.34" y="88.9"/>
 <instance part="GND8" gate="1" x="53.34" y="81.28"/>
 <instance part="SUPPLY1" gate="G$1" x="160.02" y="109.22"/>
-<instance part="LOGO3" gate="G$1" x="109.22" y="35.56"/>
-<instance part="LOGO2" gate="G$1" x="142.24" y="48.26"/>
+<instance part="LOGO3" gate="G$1" x="116.84" y="35.56"/>
+<instance part="LOGO2" gate="G$1" x="149.86" y="48.26"/>
 <instance part="D1" gate="G$1" x="33.02" y="119.38"/>
 <instance part="D2" gate="G$1" x="43.18" y="119.38"/>
 <instance part="R1" gate="G$1" x="33.02" y="129.54" rot="R90"/>
 <instance part="R2" gate="G$1" x="43.18" y="129.54" rot="R90"/>
 <instance part="C3" gate="G$1" x="91.44" y="106.68"/>
-<instance part="J3" gate="G$1" x="198.12" y="101.6"/>
+<instance part="J2" gate="G$1" x="198.12" y="101.6"/>
 <instance part="SUPPLY2" gate="G$1" x="91.44" y="116.84"/>
 <instance part="U$2" gate="G$1" x="220.98" y="111.76"/>
 <instance part="SUPPLY3" gate="G$1" x="236.22" y="111.76"/>
@@ -20200,7 +20200,7 @@ for 5V VCC and Logic</text>
 </segment>
 <segment>
 <wire x1="203.2" y1="96.52" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="205.74" y1="93.98" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
 </segment>
@@ -20256,7 +20256,7 @@ for 5V VCC and Logic</text>
 <segment>
 <wire x1="203.2" y1="99.06" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
 <label x="213.36" y="99.06" size="1.27" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="!CTS"/>
@@ -20268,7 +20268,7 @@ for 5V VCC and Logic</text>
 <segment>
 <wire x1="203.2" y1="109.22" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
 <label x="213.36" y="109.22" size="1.27" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="6"/>
+<pinref part="J2" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="!DTR"/>
@@ -20311,7 +20311,7 @@ for 5V VCC and Logic</text>
 <segment>
 <wire x1="203.2" y1="104.14" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <label x="213.36" y="104.14" size="1.27" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="TXD"/>
@@ -20327,7 +20327,7 @@ for 5V VCC and Logic</text>
 <segment>
 <wire x1="203.2" y1="106.68" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
 <label x="213.36" y="106.68" size="1.27" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="5"/>
+<pinref part="J2" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="RXD"/>
@@ -20342,7 +20342,7 @@ for 5V VCC and Logic</text>
 <net name="VCC" class="0">
 <segment>
 <label x="208.28" y="101.6" size="1.27" layer="95"/>
-<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="203.2" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="101.6" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>

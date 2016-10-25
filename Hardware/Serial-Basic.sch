@@ -20061,6 +20061,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
+<deviceset name="330OHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<description>RES-00818</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-00818"/>
+<attribute name="VALUE" value="330" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -20078,8 +20098,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$1" library="SparkFun" deviceset="5V" device=""/>
-<part name="U$4" library="SparkFun" deviceset="5V" device=""/>
 <part name="JP3" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
 <part name="JP4" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
 <part name="JP5" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
@@ -20107,7 +20125,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".1_INCH"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-YELLOW" device="0603" value="Yellow"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M06" device="SMD-FEMALE-V2"/>
@@ -20116,12 +20133,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value=""/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="R3" library="SparkFun-Resistors" deviceset="330OHM1/10W1%(0603)" device="" value="330"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="220.726" y="121.158" size="1.778" layer="95">Default 3.3V</text>
-<text x="238.76" y="7.62" size="2.54" layer="97">v01</text>
+<text x="238.76" y="7.62" size="2.54" layer="97">v10</text>
 <text x="35.56" y="71.12" size="2.54" layer="97">USB to Serial</text>
 <text x="129.54" y="71.12" size="2.54" layer="97">3.3V Regulation</text>
 <wire x1="106.68" y1="185.42" x2="106.68" y2="0" width="0.2032" layer="97" style="longdash"/>
@@ -20135,8 +20155,6 @@ for 5V VCC and Logic</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="GND7" gate="1" x="91.44" y="99.06"/>
-<instance part="U$1" gate="G$1" x="33.02" y="137.16"/>
-<instance part="U$4" gate="G$1" x="43.18" y="137.16"/>
 <instance part="JP3" gate="G$1" x="238.76" y="27.94"/>
 <instance part="JP4" gate="G$1" x="243.84" y="27.94"/>
 <instance part="JP5" gate="G$1" x="238.76" y="33.02"/>
@@ -20176,7 +20194,6 @@ for 5V VCC and Logic</text>
 <instance part="LOGO2" gate="G$1" x="149.86" y="48.26"/>
 <instance part="D1" gate="G$1" x="33.02" y="119.38"/>
 <instance part="D2" gate="G$1" x="43.18" y="119.38"/>
-<instance part="R1" gate="G$1" x="33.02" y="129.54" rot="R90"/>
 <instance part="R2" gate="G$1" x="43.18" y="129.54" rot="R90"/>
 <instance part="C3" gate="G$1" x="91.44" y="106.68"/>
 <instance part="J2" gate="G$1" x="198.12" y="101.6"/>
@@ -20188,6 +20205,9 @@ for 5V VCC and Logic</text>
 <attribute name="NAME" x="226.822" y="111.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="230.505" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="SUPPLY4" gate="G$1" x="43.18" y="137.16"/>
+<instance part="SUPPLY5" gate="G$1" x="33.02" y="137.16"/>
+<instance part="R3" gate="G$1" x="33.02" y="129.54" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20297,7 +20317,7 @@ for 5V VCC and Logic</text>
 <segment>
 <wire x1="33.02" y1="124.46" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -20356,18 +20376,18 @@ for 5V VCC and Logic</text>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 <wire x1="91.44" y1="116.84" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<wire x1="33.02" y1="137.16" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="5V"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-</segment>
 <segment>
 <wire x1="43.18" y1="137.16" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="5V"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 </segment>
+<segment>
+<wire x1="33.02" y1="137.16" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="5V" class="0">
 <segment>
 <wire x1="223.52" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="109.22" x2="220.98" y2="111.76" width="0.1524" layer="91"/>

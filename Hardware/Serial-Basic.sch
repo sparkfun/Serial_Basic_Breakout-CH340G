@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20444,6 +20444,7 @@ Used on single circuit logic gates</description>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U4" library="Serial-Basic" deviceset="74*08" device="" value="74LVC1G08SE"/>
+<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20523,6 +20524,7 @@ for 5V VCC and Logic</text>
 <instance part="GND10" gate="1" x="71.12" y="124.46"/>
 <instance part="U4" gate="G1" x="48.26" y="127"/>
 <instance part="U4" gate="G2" x="71.12" y="137.16"/>
+<instance part="SUPPLY7" gate="G$1" x="210.82" y="154.94"/>
 </instances>
 <busses>
 </busses>
@@ -20688,11 +20690,14 @@ for 5V VCC and Logic</text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<label x="213.36" y="144.78" size="1.27" layer="95"/>
 <pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="208.28" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="144.78" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
+<wire x1="210.82" y1="154.94" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+<junction x="210.82" y="144.78"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="VCC"/>

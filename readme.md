@@ -2,6 +2,7 @@ SparkFun Serial Basic Breakout - CH340G
 ========================================
 
 ![SparkFun Serial Basic Breakout - CH340G](https://cdn.sparkfun.com//assets/parts/1/1/8/8/8/14050-01.jpg)
+
 [*SparkFun Serial Basic Breakout - CH340G (DEV-14050)*](https://www.sparkfun.com/products/14050)
 
 This is a CH340G based board that converts USB to Serial. 
@@ -21,7 +22,7 @@ Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/serial-basic-hookup-guide)** - Basic hookup guide
 * **[How to Install CH340 Drivers](https://www.sparkfun.com/ch340)** - Drivers if you need
-* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
+* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts/blob/main/products/14050_sfe_serial_basic_breakout_ch340g.fzpz)** - Fritzing diagrams for SparkFun products.
 * **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
 * **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
 
